@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //
 
-.home-page-title, .gallery-addr, .gallery-hours, .gallery-tele, .where-to-buy-text {
+.gallery-addr, .gallery-hours, .gallery-tele, .home-page-title, .where-to-buy-text {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,10 +19,17 @@
 
 .gallery-logo {
   display: block;
+  margin-bottom: 14px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 14px;
   max-width: 100%;
+}
+
+.home-page-body {
+  background-image: url(home-page-background.jpg);
+  background-size: cover;
+  color: #488048;
 }
 
 .where-to-buy-text {
