@@ -31,8 +31,9 @@
 }
 
 .home-page-body {
+  background-attachment: fixed;
   background-image: url(asset_path('home-page-background.jpg'));
-  background-size: stretch stretch;
+  background-size: 100% 100%;
   color: #488048;
 }
 
