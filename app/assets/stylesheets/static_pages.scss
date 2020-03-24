@@ -27,7 +27,7 @@
 }
 
 .home-page-body {
-  background-image: url('home-page-background.jpg');
+  background-image: url(asset_path('home-page-background.jpg'));
   background-size: cover;
   color: #488048;
 }
