@@ -8,12 +8,16 @@
 }
 
 .gallery-addr, .gallery-tele {
+  color: #609860;
+  font-weight: bold;
   margin-bottom: 0;
   margin-top: 0;
   text-align: center;
 }
 
 .gallery-hours {
+  color: #609860;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -28,7 +32,7 @@
 
 .home-page-body {
   background-image: url(asset_path('home-page-background.jpg'));
-  background-size: cover;
+  background-size: auto auto;
   color: #488048;
 }
 
