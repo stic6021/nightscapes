@@ -3,40 +3,26 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //
 
-.gallery-addr, .gallery-hours, .gallery-tele, .home-page-title, .where-to-buy-text {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.gallery-addr, .gallery-tele {
-  color: #609860;
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-top: 0;
-  text-align: center;
-}
-
-.gallery-hours {
-  color: #609860;
-  font-weight: bold;
-  text-align: center;
-}
-
-.gallery-logo {
-  display: block;
-  margin-bottom: 14px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 14px;
-  max-width: 100%;
-}
-
 .home-page-body {
   background-attachment: fixed;
   background-image: url(asset_path('home-page-background.jpg'));
   background-size: 100% 100%;
   color: #488048;
+  font-family: 'Open Sans', sans-serif;
   height: 100%;
 }
 
-.where-to-buy-text {
+.home-page-footer {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #68a068;
+}
+
+.home-page-title {
+  text-align: center;
+}
+
+.where-to-buy-link {
 }

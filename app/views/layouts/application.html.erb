@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nightscapes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Estes Nightscapes</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <div class="tab-bar">
+      <%= tabs_tag do |tab| %>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <%= tab.home 'Home', root_path %>
+            </div>
+            <div class="col">
+              <%= tab.where_to_buy 'Where to buy', galleries_path %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </head>
 
   <body>

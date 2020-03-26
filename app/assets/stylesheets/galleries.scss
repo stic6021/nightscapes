@@ -1,0 +1,52 @@
+// Place all the styles related to the galleries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body, head {
+  background-color: #303030;
+  background-size: cover;
+  color: #488048;
+}
+
+.gallery-info {
+}
+
+.gallery-addr, .gallery-hours, .gallery-tele, .where-to-buy-text {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.gallery-addr, .gallery-tele {
+  color: #407058;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.gallery-hours {
+  color: #407058;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gallery-logo {
+  display: block;
+  margin-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  max-width: 70%;
+}
+
+.storefront-image {
+  display: block;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  max-width: 70%;
+}
+
+.where-to-buy-text {
+  color: #407058;
+}
