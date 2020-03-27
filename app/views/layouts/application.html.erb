@@ -13,11 +13,14 @@
     <div class="tab-bar">
       <%= tabs_tag do |tab| %>
         <div class="container">
-          <div class="row">
-            <div class="col">
+          <div class="row tab-bar-bullet">
+            <div class="col tab-bar-item">
               <%= tab.home 'Home', root_path %>
             </div>
-            <div class="col">
+            <div class="col tab-bar-item">
+              <%= tab.gallery_images 'Gallery images', gallery_images_path %>
+            </div>
+            <div class="col tab-bar-item">
               <%= tab.where_to_buy 'Where to buy', galleries_path %>
             </div>
           </div>

@@ -1,0 +1,21 @@
+// Place all the styles related to the gallery_images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.landscape-image {
+  display: block;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  max-width: 70%;
+}
+
+.portrait-image {
+  display: block;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  max-width: 70%;
+}
