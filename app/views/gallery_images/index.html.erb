@@ -1,6 +1,14 @@
 <div class="row landscape-div">
-  <%= image_tag("EN-HD-images/landscape/GemLake-2019Jul28.jpg", class: "landscape-image") %>
+  <% @landscapes.each do |img_path| %>
+    <div class="col">
+      <%= image_tag(img_path, class: "landscape-image") %>
+    </div>
+  <% end %>
 </div>
 <div class="row portrait-div">
-  <%= image_tag("EN-HD-images/portrait/FirsReaching-2018Sep8.jpg", class: "portrait-image") %>
+  <% @portraits.each do |img_path| %>
+    <div class="col">
+      <%= image_tag(img_path, class: "portrait-image") %>
+    </div>
+  <% end %>
 </div>
