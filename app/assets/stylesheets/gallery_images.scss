@@ -2,20 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.landscape-image {
-  display: block;
-  margin-bottom: 5%;
+.image-gallery-body {
+}
+
+.image-gallery-show-container {
+  text-align: center;
+}
+
+.landscape-div {
+  margin-bottom: 11%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
-  max-width: 70%;
+  margin-top: 0;
+}
+
+.landscape-image {
+  border: 1px solid #aaa;
+  max-width: 85%;
+}
+
+.portrait-div {
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
 }
 
 .portrait-image {
-  display: block;
-  margin-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  max-width: 70%;
+  border: 1px solid #aaa;
+  max-width: 57%;
+}
+
+.show-image {
+  border: 1px solid #555;
+  margin-bottom: 3%;
+  max-height: 100%;
+  max-width: 100%;
 }

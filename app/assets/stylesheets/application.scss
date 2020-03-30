@@ -25,13 +25,19 @@ body, header {
 
 .tab-bar {
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 9%;
   margin-top: 3%;
 }
 
 .tab-bar-bullet {
   list-style-type: none;
-  margin-left: -20%;
   text-align: center;
+  width: 100%;
+}
+
+.tab-bar-container {
+  margin-left: -4%;
+  width: 100%;
 }
 
 .tab-bar-item {
