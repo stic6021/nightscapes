@@ -23,23 +23,14 @@ body, header {
   height: 100%;
 }
 
-.tab-bar {
+.navbar-row {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 9%;
   margin-top: 3%;
 }
 
-.tab-bar-bullet {
-  list-style-type: none;
+.navbar-item {
+  font-size: medium;
   text-align: center;
   width: 100%;
-}
-
-.tab-bar-container {
-  margin-left: -4%;
-  width: 100%;
-}
-
-.tab-bar-item {
-  font-size: medium;
 }

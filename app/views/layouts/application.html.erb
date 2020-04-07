@@ -10,23 +10,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <div class="tab-bar">
-      <%= tabs_tag do |tab| %>
-        <div class="tab-bar-container">
-          <div class="row tab-bar-bullet">
-            <div class="col tab-bar-item">
-              <%= tab.home 'Home', root_path %>
-            </div>
-            <div class="col tab-bar-item">
-              <%= tab.gallery_images 'Gallery images', gallery_images_path %>
-            </div>
-            <div class="col tab-bar-item">
-              <%= tab.where_to_buy 'Where to buy', galleries_path %>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
+    <nav class="navbar navbar-row row">
+      <a class="col nav-link navbar-item" href=<%= root_path %>>Home</a>
+      <a class="col nav-link navbar-item" href=<%= gallery_images_path %>>Gallery images</a>
+      <a class="col nav-link navbar-item" href=<%= galleries_path %>>Where to buy</a>
+    </nav>
   </head>
 
   <body>
