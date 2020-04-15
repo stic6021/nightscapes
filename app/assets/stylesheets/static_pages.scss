@@ -19,14 +19,24 @@
 	margin-bottom: 6%;
 }
 
-#home-page-carousel {
+#home-page-carousel-landscape {
 	margin-bottom: 3%;
 	margin-top: 12%;
 }
 
-.home-page-carousel-inner {
-	max-height: 300px;
-	max-width: 450px;
+#home-page-carousel-portrait {
+  margin-bottom: 3%;
+  margin-top: 6%;
+}
+
+.home-page-carousel-inner-landscape {
+  max-height: 240px;
+  max-width: 360px;
+}
+
+.home-page-carousel-inner-portrait {
+  max-height: 300px;
+  max-width: 200px;
 }
 
 .home-page-carousel-item {
