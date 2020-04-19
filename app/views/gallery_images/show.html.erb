@@ -1,3 +1,5 @@
 <div class="container image-gallery-show-container">
+	<p class="image-gallery-show-title"><%= @gallery_image.image_title %></p>
   <%= link_to(image_tag(@gallery_image.file_name, class: "show-image"), gallery_images_path) %>
+	<p class="image-gallery-show-description"><%= @gallery_image.image_description %></p>
 </div>
