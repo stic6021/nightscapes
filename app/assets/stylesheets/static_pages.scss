@@ -12,21 +12,19 @@
 
 .home-page-company-name {
   margin-top: 0;
-  position: relative;
 }
 
-.home-page-product {
-	margin-bottom: 6%;
+#home-page-flex-container {
+  display: flex;
+  flex-direction: column;
 }
 
-#home-page-carousel-landscape {
-	margin-bottom: 3%;
-	margin-top: 12%;
+#home-page-carousel-landscape, #home-page-carousel-portrait, .home-page-product {
+	margin-bottom: 1vh;
 }
 
-#home-page-carousel-portrait {
-  margin-bottom: 3%;
-  margin-top: 6%;
+#home-page-carousel-landscape, #home-page-carousel-portrait {
+	margin-top: 1vh;
 }
 
 .home-page-carousel-inner-landscape {

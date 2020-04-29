@@ -1,44 +1,45 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <title>Estes Nightscapes</title>
-</head>
-<body class="home-page-body">
-  <h1 class=home-page-company-name>Estes Nightscapes</h1>
-  <h2 class=home-page-product>Night Sky Photography</h2>
+	<head>
+	  <meta charset="utf-8">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	  <title>Estes Nightscapes</title>
+		<script>
+			$(function () {
+				$('#home-page-carousel-landscape').carousel({pause: false})
+			})
+			$(function () {
+				$('#home-page-carousel-portrait').carousel({pause: false})
+			})
+		</script>
+	</head>
+	<body class="home-page-body">
+		<div id="home-page-flex-container">
+		  <h1 class=home-page-company-name>Estes Nightscapes</h1>
+		  <h2 class=home-page-product>Night Sky Photography</h2>
 
-	<div id="home-page-carousel-landscape" class="carousel slide" data-ride="carousel">
-	  <div class="carousel-inner home-page-carousel-inner-landscape mx-auto">
-	  	<% GalleryImage.all_landscapes.each_with_index do |img_path, index| %>
-	  		<% class_extras = index > 0 ? "home-page-carousel-item" : "active home-page-carousel-item" %>
-		    <div class="carousel-item <%= class_extras %>">
-		    	<%= image_tag(img_path, class: "d-block img-fluid") %>
-		    </div>
-		  <% end %>
-	  </div>
-	</div>  
+			<div id="home-page-carousel-landscape" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner home-page-carousel-inner-landscape mx-auto">
+			  	<% GalleryImage.all_landscapes.each_with_index do |img_path, index| %>
+			  		<% class_extras = index > 0 ? "home-page-carousel-item" : "active home-page-carousel-item" %>
+				    <div class="carousel-item <%= class_extras %>">
+				    	<%= image_tag(img_path, class: "d-block img-fluid") %>
+				    </div>
+				  <% end %>
+			  </div>
+			</div>  
 
-	<div id="home-page-carousel-portrait" class="carousel slide" data-ride="carousel">
-	  <div class="carousel-inner home-page-carousel-inner-portrait mx-auto">
-	  	<% GalleryImage.all_portraits.each_with_index do |img_path, index| %>
-	  		<% class_extras = index > 0 ? "home-page-carousel-item" : "active home-page-carousel-item" %>
-		    <div class="carousel-item <%= class_extras %>">
-		    	<%= image_tag(img_path, class: "d-block img-fluid") %>
-		    </div>
-		  <% end %>
-	  </div>
-	</div>  
+			<div id="home-page-carousel-portrait" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner home-page-carousel-inner-portrait mx-auto">
+			  	<% GalleryImage.all_portraits.each_with_index do |img_path, index| %>
+			  		<% class_extras = index > 0 ? "home-page-carousel-item" : "active home-page-carousel-item" %>
+				    <div class="carousel-item <%= class_extras %>">
+				    	<%= image_tag(img_path, class: "d-block img-fluid") %>
+				    </div>
+				  <% end %>
+			  </div>
+			</div>
+		</div>
 
-</body>
+	</body>
 </html>
-
-<script>
-	$(function () {
-		$('#home-page-carousel-landscape').carousel({pause: false})
-	})
-	$(function () {
-		$('#home-page-carousel-portrait').carousel({pause: false})
-	})
-</script>

@@ -1,19 +1,26 @@
-
-<div class="image-gallery-body">
-  <div class="row landscape-div">
-    <% @landscapes.each do |img_path| %>
-      <% gi = GalleryImage.find_by_file_name(img_path) %>
-      <div class="col landscape-image-col">
-        <%= link_to(image_tag(img_path, class: "d-block landscape-image mx-auto"), gallery_image_path(gi)) %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gallery Images</title>
+  </head>
+  <body>
+    <div class="image-gallery-body">
+      <div class="row landscape-div">
+        <% @landscapes.each do |img_path| %>
+          <% gi = GalleryImage.find_by_file_name(img_path) %>
+          <div class="col landscape-image-col">
+            <%= link_to(image_tag(img_path, class: "d-block landscape-image mx-auto"), gallery_image_path(gi)) %>
+          </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-  <div class="row portrait-div">
-    <% @portraits.each do |img_path| %>
-      <% gi = GalleryImage.find_by_file_name(img_path) %>
-      <div class="col portrait-image-column">
-        <%= link_to(image_tag(img_path, class: "d-block portrait-image mx-auto"), gallery_image_path(gi)) %>
+      <div class="row portrait-div">
+        <% @portraits.each do |img_path| %>
+          <% gi = GalleryImage.find_by_file_name(img_path) %>
+          <div class="col portrait-image-column">
+            <%= link_to(image_tag(img_path, class: "d-block portrait-image mx-auto"), gallery_image_path(gi)) %>
+          </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-</div>
+    </div>
+  </body>
+</html>
